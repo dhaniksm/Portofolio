@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:wght@400;600;700&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/2c0e00c9bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="./assets/profil.jpg" alt="Foto Profil" />
+        <a href="#home" class="me">DHANI KUSUMA</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="sidebar">
+      <a href="https://www.linkedin.com/in/dhanikusuma13/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/dhani_ksm" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.youtube.com/@dhanikusuma13" class="youtube" target="_blank""><i class="fab fa-youtube"></i></a>
+      <a href="https://github.com/dhaniksm" class="github" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/dhani.ksm/" class="instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <section id="home" class="hero">
+      <h1 id="hero-title"></h1>
+      <p>
+        Seorang mahasiswa Teknologi Informasi yang berfokus untuk menjadi lebih
+        baik hari demi hari
+      </p>
+      <a href="#projects" class="button">PROJECTS</a>
+      <div class="scroll-indicator"></div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p class="subtitle">
+        Di sini Anda akan menemukan informasi lebih lanjut tentang saya, apa
+        yang saya lakukan,
+        <br />dan apa yang saya sudah dan pelajari saat ini, terutama dalam hal
+        pemrograman dan teknologi.
+      </p>
+
+      <div class="about-container">
+        <div class="about-text">
+          <h3>Get to know me!</h3>
+          <p>
+            Aku seorang mahasiswa
+            <strong>Teknologi Informasi di Universitas Jember </strong> yang
+            sedang fokus mempelajari pengembangan aplikasi berbasis web dan
+            database. Buatku, belajar bareng dan saling bertukar ide adalah cara
+            terbaik untuk berkembang.
+          </p>
+          <p>
+            Aku terbuka untuk berkolaborasi atau berdiskusi mengenai proyek yang
+            dapat membantu meningkatkan skill sekaligus menambah pengalaman.
+            Jadi kalau ada sesuatu yang menarik, jangan ragu untuk menghubungi
+            aku.
+            <a href="#contact">contact</a> me.
+          </p>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+
+        <div class="about-skills">
+          <h3>Hal yang saya pelajari</h3>
+          <div class="skills-list">
+            <span>Python</span>
+            <span>C#</span>
+            <span>PostgreSQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <p class="subtitle">
+        Di sini Anda akan menemukan beberapa proyek pribadi dan akademis yang
+        saya buat
+        <br />sebagai bagian dari perjalanan pembelajaran saya dalam Teknologi
+        Informasi.
+      </p>
+
+      <div class="project-container">
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/jaloka.png" alt="JALOKA Project" />
+          </div>
+          <div class="project-info">
+            <h3>JALOKA</h3>
+            <p>
+              JALOKA adalah aplikasi peminjaman buku berbasis desktop yang saya
+              kembangkan dengan
+              <strong>C#, WinForms, PostgreSQL</strong>, dan arsitektur MVC.
+              Fitur utama: katalog buku, keranjang pinjaman, konfirmasi admin,
+              serta sistem denda otomatis.
+            </p>
+            <a href="https://github.com/dhaniksm/JALOKA" target="_blank" class="btn">Cek Selengkapnya</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/simaris.png" alt="SIMARIS Project" />
+          </div>
+          <div class="project-info">
+            <h3>SIMARIS</h3>
+            <p>
+              SIMARIS adalah sistem informasi untuk rumah sakit berbasis
+              terminal yang saya kembangkan dengan <strong>Python</strong>.
+            </p>
+            <a href="https://github.com/dhaniksm/SIMARIS" target="_blank" class="btn">Cek Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p class="subtitle">
+        Jangan ragu untuk menghubungi saya dengan mengirimkan formulir
+        <br />di bawah ini dan saya akan segera menghubungi Anda kembali.
+      </p>
+
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter Your Message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h3>Dhani</h3>
+        <p>
+          Seorang mahasiswa Teknologi Informasi yang bersemangat membangun
+          Aplikasi Web
+          <br />dan bereksperimen dengan teknologi baru untuk mengembangkan
+          keterampilan saya.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <h3>Social</h3>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/dhanikusuma13/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/dhaniksm" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/dhani_ksm" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/dhani.ksm/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
